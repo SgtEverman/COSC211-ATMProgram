@@ -1,16 +1,15 @@
 
 public class Account {
 
-	private enum AccountType {
-		SAVINGS, CHECKING
-	}
+	private final int SAVINGS = 0;
+	private final int CHECKING = 0;
 	
-	private AccountType type;
+	private int type;
 	private int customerNumber = 0;
 	private int customerPin = 0;
 	private int balance = 0;
 
-	public Account(AccountType type, int custNum, int custPin) {
+	public Account(int type, int custNum, int custPin) {
 		this.type = type;
 		this.customerNumber = custNum;
 		this.customerPin = custPin;
